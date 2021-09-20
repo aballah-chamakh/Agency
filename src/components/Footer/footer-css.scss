@@ -1,0 +1,144 @@
+.footer-container-back{
+  background-color: #34495E ;
+  color: #ECF0F1 ;
+  padding-top: 40px ;
+  font-family: sans-serif;
+  .bottom-footer{
+    display: flex;
+    justify-content: center;
+    background-color: #1C2833 ;
+    padding: 10px 0px ;
+    p{
+      font-size: 15px ;
+    }
+  }
+}
+.footer-container{
+  max-width: 1080px ;
+  display: flex;
+  flex-direction : column ;
+  margin: auto;
+  .footer-list{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 0px 15px ;
+    .footer-item-about{
+      flex-basis: 45% ;
+      img{
+        width: 75px ;
+        height: 75px ;
+        margin-bottom: 15px ;
+      }
+      p{
+        line-height: 30px ;
+      }
+    }
+    .footer-item-sitemap{
+      flex-basis: 27.5% ;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      // padding-right: 30px ;
+      h1{
+        font-size: 15px ;
+        font-weight: 600 ;
+        text-transform: uppercase;
+      }
+      ul{
+        margin-top: 20px ;
+        list-style-type: none ;
+        li{
+          text-decoration: none ;
+          margin: 10px 0px ;
+          padding-bottom: 10px ;
+          transition: border-bottom 150ms ;
+          a{
+            text-decoration: none ;
+            color : #ECF0F1 ;
+          }
+        }
+        li:hover{
+          border-bottom: 1px solid white ;
+
+        }
+      }
+    }
+    .footer-item-contact{
+      flex-basis: 27.5% ;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h1{
+        font-size: 15px ;
+        font-weight: 600 ;
+        text-transform: uppercase;
+      }
+      ul{
+        margin-top: 20px ;
+        list-style-type: none ;
+        li{
+
+          margin: 10px 0px ;
+          &:nth-child(1){
+            i{
+              margin-right: 10px ;
+            }
+          }
+
+          &:nth-child(1){
+            i{
+              margin-right: 12px ;
+            }
+          }
+          &:nth-child(2){
+            i{
+              position : relative;
+              top : 5px ;
+              margin-right: 5px ;
+            }
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 750px) {
+        .footer-item-about{
+          flex-basis: 100% ;
+          margin-bottom: 20px ;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .footer-item-sitemap{
+          flex-basis: 100% ;
+          margin: 20px 0px ;
+          text-align: center;
+
+        }
+        .footer-item-contact{
+          margin: 20px 0px ;
+          flex-basis: 100% ;
+          text-align: center;
+          ul{
+            text-align: center;
+          }
+        }
+    }
+  }
+  .footer-sm{
+    width: 100% ;
+    margin: 50px 0px ;
+     ul{
+       list-style-type: none ;
+       display: flex;
+       margin: auto;
+       max-width: 660px ;
+       justify-content: space-around;
+       li{
+         i{
+           font-size: 25px ;
+         }
+       }
+     }
+  }
+}

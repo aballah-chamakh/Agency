@@ -1,0 +1,65 @@
+.why-digital-container{
+  display: flex ;
+  max-width: 1080px ;
+  margin: auto;
+  margin-top: 25px ;
+  .why-digital-img{
+    width: 45% ;
+    display: flex;
+    flex-direction: column;
+    h1{
+      font-size: 25px ;
+      font-weight: 500 ;
+      display: none ;
+    }
+    img{
+      width: 100% ;
+    }
+  }
+  .why-digital-text{
+    width : 50% ;
+    h1{
+      font-size: 35px ;
+      font-weight: 500 ;
+    }
+    p{
+      line-height: 26px ;
+    }
+    button{
+      background-color: #1F73A6 ;
+      padding : 15px ;
+      width: 200px ;
+      border: none ;
+      border-radius: 5px ;
+      outline-style: none ;
+      color : white ;
+      font-size: 15px ;
+
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    flex-direction: column;
+    max-width: 600px ;
+    margin: 20px auto ;
+    .why-digital-text{
+      width: 100% ;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h1{
+        display: none ;
+
+      }
+      p{
+        padding: 15px ;
+      }
+    }
+    .why-digital-img{
+      width: 100% ;
+      h1{
+        display: block ;
+        padding: 0px 15px ;
+      }
+    }
+  }
+}

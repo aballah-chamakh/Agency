@@ -1,0 +1,65 @@
+.how-we-work-container-back{
+  padding: 0px 15px ;
+}
+.how-we-work-container{
+  margin: 35px auto ;
+  max-width: 1080px ;
+  display: flex;
+
+  justify-content: space-between;
+  .how-we-work-img{
+    flex-basis: 45% ;
+    img{
+
+      width: 100% ;
+    }
+    .steps-list{
+      display: none ;
+    }
+  }
+  .how-we-work-text{
+    flex-basis: 55% ;
+    .steps-list{
+        margin : 15px 0px ;
+    }
+    h1{
+      font-size: 45px ;
+      font-weight: 450 ;
+    }
+    h4{
+      font-size: 20px ;
+      font-weight: 300 ;
+      margin : 10px 0px ;
+    }
+  }
+  @media only screen and (max-width: 700px) {
+    flex-direction: column;
+    align-items: center;
+  .how-we-work-text{
+    width: 100% ;
+    text-align: center;
+    h1{
+      font-size: 35px ;
+    }
+    .steps-list{
+      display: none ;
+    }
+  }
+  .how-we-work-img{
+    width: 100% ;
+
+    .steps-list{
+      width: 100% ;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0px auto ;
+      h4{
+        font-size: 20px ;
+        font-weight: 100 ;
+        margin : 10px 0px ;
+      }
+    }
+  }
+}
+}

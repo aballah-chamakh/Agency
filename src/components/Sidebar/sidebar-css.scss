@@ -1,0 +1,30 @@
+.sidebar{
+  width: 240px ;
+  height: 100% ;
+  text-align: center;
+  ul{
+    margin-top: 40px ;
+    list-style: none ;
+    li{
+      text-decoration: none ;
+      padding-bottom: 10px ;
+      cursor: pointer;
+      a{
+        text-decoration: none ;
+        color: white ;
+      }
+      margin: 15px auto ;
+      padding-bottom: 15px ;
+      color: white ;
+      // border-bottom: 0.5px solid white ;
+      width: 90% ;
+      font-family: tahoma ;
+      font-weight: 10 ;
+      transition: border-bottom 200ms ;
+      &:hover{
+        border-bottom: 1px solid white ;
+      }
+    }
+  }
+
+}
